@@ -1,0 +1,29 @@
+#table_outer{
+	border: 1px solid black;
+	height: 600px;
+	width: 600px;
+	position: fixed;
+}
+
+tr,input{
+	border:1px solid black; 
+	position: relative;
+	height: 66px;
+	width: 66px;
+	text-align: center;
+}
+td{
+	border:1px solid black; 
+	position: relative;
+	height: 66px;
+	width: 66px;
+	text-align: center;
+	background-color: black;
+}
+
+#table_inner{
+	border: 1px solid black;
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
