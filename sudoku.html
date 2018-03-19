@@ -10,7 +10,7 @@
   	<script src="sudoku.js"></script>
 	<title></title>
 </head>
-<body>
+<body id="back">
 	<button id="btn">here</button>
 <div class="col-md-3"></div>
 <div class="col-md-4">
@@ -20,19 +20,19 @@
 				<table  id="table_inner">
 					<div id="table1">
 						<tr>
-							<td id="box1"><input type="text" name="box1" id="bx1" maxlength="1" ></td>
-							<td id="box2"><input type="text" name="box2" id="bx2" maxlength="1"></td>
-							<td id="box3"><input type="text" name="box3" id="bx3" maxlength="1"></td>				
+							<td id="box1"><input type="text" name="box1" id="bx1" maxlength="1" required ></td>
+							<td id="box2"><input type="text" name="box2" id="bx2" maxlength="1" required ></td>
+							<td id="box3"><input type="text" name="box3" id="bx3" maxlength="1" required ></td>				
 						</tr>
 						<tr>
-							<td id="box4"><input type="text" name="box4" id="bx4" maxlength="1"></td>
-							<td id="box5"><input type="text" name="box5" id="bx5" maxlength="1"></td>
-							<td id="box6"><input type="text" name="box6" id="bx6" maxlength="1"></td>
+							<td id="box4"><input type="text" name="box4" id="bx4" maxlength="1" required readonly placeholder="5"></td>
+							<td id="box5"><input type="text" name="box5" id="bx5" maxlength="1" required></td>
+							<td id="box6"><input type="text" name="box6" id="bx6" maxlength="1" required readonly placeholder="1"></td>
 						</tr>
 						<tr>
-							<td id="box7"><input type="text" name="box7" id="bx7" maxlength="1"></td>
-							<td id="box8"><input type="text" name="box8" id="bx8" maxlength="1"></td>
-							<td id="box9"><input type="text" name="box9" id="bx9" maxlength="1"></td>
+							<td id="box7"><input type="text" name="box7" id="bx7" maxlength="1" required readonly placeholder="9"></td>
+							<td id="box8"><input type="text" name="box8" id="bx8" maxlength="1" required></td>
+							<td id="box9"><input type="text" name="box9" id="bx9" maxlength="1" required></td>
 						</tr>
 					</div>
 	</table>
@@ -40,38 +40,38 @@
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box10"><input type="text" name="box10" id="bx10" maxlength="1" ></td>
-			<td id="box11"><input type="text" name="box11" id="bx11" maxlength="1"></td>
-			<td id="box12"><input type="text" name="box12" id="bx12" maxlength="1"></td>				
+			<td id="box10"><input type="text" name="box10" id="bx10" maxlength="1" required readonly placeholder="3"></td>
+			<td id="box11"><input type="text" name="box11" id="bx11" maxlength="1" required readonly placeholder="9"></td>
+			<td id="box12"><input type="text" name="box12" id="bx12" maxlength="1" required></td>				
 		</tr>
 		<tr>
-			<td id="box13"><input type="text" name="box13" id="bx13" maxlength="1"></td>
-			<td id="box14"><input type="text" name="box14" id="bx14" maxlength="1"></td>
-			<td id="box15"><input type="text" name="box15" id="bx15" maxlength="1"></td>
+			<td id="box13"><input type="text" name="box13" id="bx13" maxlength="1" required></td>
+			<td id="box14"><input type="text" name="box14" id="bx14" maxlength="1" required></td>
+			<td id="box15"><input type="text" name="box15" id="bx15" maxlength="1" required></td>
 		</tr>
 		<tr>
-			<td id="box16"><input type="text" name="box16" id="bx16" maxlength="1"></td>
-			<td id="box17"><input type="text" name="box17" id="bx17" maxlength="1"></td>
-			<td id="box18"><input type="text" name="box18" id="bx18" maxlength="1"></td>
+			<td id="box16"><input type="text" name="box16" id="bx16" maxlength="1" required readonly placeholder="7"></td>
+			<td id="box17"><input type="text" name="box17" id="bx17" maxlength="1" required></td>
+			<td id="box18"><input type="text" name="box18" id="bx18" maxlength="1" required></td>
 		</tr>
 			</table>
 			</td>
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box19"><input type="text" name="box19" id="bx19" maxlength="1" ></td>
-			<td id="box20"><input type="text" name="box20" id="bx20" maxlength="1"></td>
-			<td id="box21"><input type="text" name="box21" id="bx21" maxlength="1"></td>				
+			<td id="box19"><input type="text" name="box19" id="bx19" maxlength="1" required ></td>
+			<td id="box20"><input type="text" name="box20" id="bx20" maxlength="1" required readonly placeholder="1"></td>
+			<td id="box21"><input type="text" name="box21" id="bx21" maxlength="1" required></td>				
 		</tr>
 		<tr>
-			<td id="box22"><input type="text" name="box22" id="bx22" maxlength="1"></td>
-			<td id="box23"><input type="text" name="box23" id="bx23" maxlength="1"></td>
-			<td id="box24"><input type="text" name="box24" id="bx24" maxlength="1"></td>
+			<td id="box22"><input type="text" name="box22" id="bx22" maxlength="1" required></td>
+			<td id="box23"><input type="text" name="box23" id="bx23" maxlength="1" required readonly placeholder="4"></td>
+			<td id="box24"><input type="text" name="box24" id="bx24" maxlength="1" required></td>
 		</tr>
 		<tr>
-			<td id="box25"><input type="text" name="box25" id="bx25" maxlength="1"></td>
-			<td id="box26"><input type="text" name="box26" id="bx26" maxlength="1"></td>
-			<td id="box27"><input type="text" name="box27" id="bx27" maxlength="1"></td>
+			<td id="box25"><input type="text" name="box25" id="bx25" maxlength="1" required readonly placeholder="5"></td>
+			<td id="box26"><input type="text" name="box26" id="bx26" maxlength="1" required></td>
+			<td id="box27"><input type="text" name="box27" id="bx27" maxlength="1" required></td>
 		</tr>
 			</table>
 			</td>				
@@ -80,57 +80,57 @@
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box28"><input type="text" name="box28" id="bx28" maxlength="1" ></td>
-			<td id="box29"><input type="text" name="box29" id="bx29" maxlength="1"></td>
-			<td id="box30"><input type="text" name="box30" id="bx30" maxlength="1"></td>				
+			<td id="box28"><input type="text" name="box28" id="bx28" maxlength="1" required readonly placeholder="6"></td>
+			<td id="box29"><input type="text" name="box29" id="bx29" maxlength="1" required></td>
+			<td id="box30"><input type="text" name="box30" id="bx30" maxlength="1" required readonly placeholder="2"></td>				
 		</tr>
 		<tr>
-			<td id="box31"><input type="text" name="box31" id="bx31" maxlength="1"></td>
-			<td id="box32"><input type="text" name="box32" id="bx32" maxlength="1"></td>
-			<td id="box33"><input type="text" name="box33" id="bx33" maxlength="1"></td>
+			<td id="box31"><input type="text" name="box31" id="bx31" maxlength="1" required></td>
+			<td id="box32"><input type="text" name="box32" id="bx32" maxlength="1" required></td>
+			<td id="box33"><input type="text" name="box33" id="bx33" maxlength="1" required></td>
 		</tr>
 		<tr>
-			<td id="box34"><input type="text" name="box34" id="bx34" maxlength="1"></td>
-			<td id="box35"><input type="text" name="box35" id="bx35" maxlength="1"></td>
-			<td id="box36"><input type="text" name="box36" id="bx36" maxlength="1"></td>
+			<td id="box34"><input type="text" name="box34" id="bx34" maxlength="1" required readonly placeholder="7"></td>
+			<td id="box35"><input type="text" name="box35" id="bx35" maxlength="1" required></td>
+			<td id="box36"><input type="text" name="box36" id="bx36" maxlength="1" required></td>
 		</tr>
 			</table>
 			</td>
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box37"><input type="text" name="box37" id="bx37" maxlength="1" ></td>
-			<td id="box38"><input type="text" name="box38" id="bx38" maxlength="1"></td>
-			<td id="box39"><input type="text" name="box39" id="bx39" maxlength="1"></td>				
+			<td id="box37"><input type="text" name="box37" id="bx37" maxlength="1" required readonly placeholder="5"></td>
+			<td id="box38"><input type="text" name="box38" id="bx38" maxlength="1" required readonly placeholder="3"></td>
+			<td id="box39"><input type="text" name="box39" id="bx39" maxlength="1" required></td>				
 		</tr>
 		<tr>
-			<td id="box40"><input type="text" name="box40" id="bx40" maxlength="1"></td>
-			<td id="box41"><input type="text" name="box41" id="bx41" maxlength="1"></td>
-			<td id="box42"><input type="text" name="box42" id="bx42" maxlength="1"></td>
+			<td id="box40"><input type="text" name="box40" id="bx40" maxlength="1" required></td>
+			<td id="box41"><input type="text" name="box41" id="bx41" maxlength="1" required readonly placeholder="7"></td>
+			<td id="box42"><input type="text" name="box42" id="bx42" maxlength="1" required></td>
 		</tr>
 		<tr>
-			<td id="box43"><input type="text" name="box43" id="bx43" maxlength="1"></td>
-			<td id="box44"><input type="text" name="box44" id="bx44" maxlength="1"></td>
-			<td id="box45"><input type="text" name="box45" id="bx45" maxlength="1"></td>
+			<td id="box43"><input type="text" name="box43" id="bx43" maxlength="1" required readonly placeholder="8"></td>
+			<td id="box44"><input type="text" name="box44" id="bx44" maxlength="1" required></td>
+			<td id="box45"><input type="text" name="box45" id="bx45" maxlength="1" required></td>
 		</tr>
 			</table>
 </td>
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box46"><input type="text" name="box46" id="bx46" maxlength="1" ></td>
-			<td id="box47"><input type="text" name="box47" id="bx47" maxlength="1"></td>
-			<td id="box48"><input type="text" name="box48" id="bx48" maxlength="1"></td>				
+			<td id="box46"><input type="text" name="box46" id="bx46" maxlength="1" required ></td>
+			<td id="box47"><input type="text" name="box47" id="bx47" maxlength="1" required readonly placeholder="7"></td>
+			<td id="box48"><input type="text" name="box48" id="bx48" maxlength="1" required></td>				
 		</tr>
 		<tr>
-			<td id="box49"><input type="text" name="box49" id="bx49" maxlength="1"></td>
-			<td id="box50"><input type="text" name="box50" id="bx50" maxlength="1"></td>
-			<td id="box51"><input type="text" name="box51" id="bx51" maxlength="1"></td>
+			<td id="box49"><input type="text" name="box49" id="bx49" maxlength="1" required></td>
+			<td id="box50"><input type="text" name="box50" id="bx50" maxlength="1" required></td>
+			<td id="box51"><input type="text" name="box51" id="bx51" maxlength="1" required readonly placeholder="8"></td>
 		</tr>
 		<tr>
-			<td id="box52"><input type="text" name="box52" id="bx52" maxlength="1"></td>
-			<td id="box53"><input type="text" name="box53" id="bx53" maxlength="1"></td>
-			<td id="box54"><input type="text" name="box54" id="bx54" maxlength="1"></td>
+			<td id="box52"><input type="text" name="box52" id="bx52" maxlength="1" required readonly placeholder="9"></td>
+			<td id="box53"><input type="text" name="box53" id="bx53" maxlength="1" required></td>
+			<td id="box54"><input type="text" name="box54" id="bx54" maxlength="1" required readonly placeholder="3"></td>
 		</tr>
 			</table>
 			</td>
@@ -139,57 +139,57 @@
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box55"><input type="text" name="box55" id="bx55" maxlength="1" ></td>
-			<td id="box56"><input type="text" name="box56" id="bx56" maxlength="1"></td>
-			<td id="box57"><input type="text" name="box57" id="bx57" maxlength="1"></td>				
+			<td id="box55"><input type="text" name="box55" id="bx55" maxlength="1" required readonly placeholder="8"></td>
+			<td id="box56"><input type="text" name="box56" id="bx56" maxlength="1" required></td>
+			<td id="box57"><input type="text" name="box57" id="bx57" maxlength="1" required readonly placeholder="3"></td>				
 		</tr>
 		<tr>
-			<td id="box58"><input type="text" name="box58" id="bx58" maxlength="1"></td>
-			<td id="box59"><input type="text" name="box59" id="bx59" maxlength="1"></td>
-			<td id="box60"><input type="text" name="box60" id="bx60" maxlength="1"></td>
+			<td id="box58"><input type="text" name="box58" id="bx58" maxlength="1" required></td>
+			<td id="box59"><input type="text" name="box59" id="bx59" maxlength="1" required readonly placeholder="9"></td>
+			<td id="box60"><input type="text" name="box60" id="bx60" maxlength="1" required></td>
 		</tr>
 		<tr>
-			<td id="box61"><input type="text" name="box61" id="bx61" maxlength="1"></td>
-			<td id="box62"><input type="text" name="box62" id="bx62" maxlength="1"></td>
-			<td id="box63"><input type="text" name="box63" id="bx63" maxlength="1"></td>
-		</tr>
-			</table>
-			</td>
-			<td>
-				<table  id="table_inner">
-		<tr>
-			<td id="box64"><input type="text" name="box64" id="bx64" maxlength="1" ></td>
-			<td id="box65"><input type="text" name="box65" id="bx65" maxlength="1"></td>
-			<td id="box66"><input type="text" name="box66" id="bx66" maxlength="1"></td>				
-		</tr>
-		<tr>
-			<td id="box67"><input type="text" name="box67" id="bx67" maxlength="1"></td>
-			<td id="box68"><input type="text" name="box68" id="bx68" maxlength="1"></td>
-			<td id="box69"><input type="text" name="box69" id="bx69" maxlength="1"></td>
-		</tr>
-		<tr>
-			<td id="box70"><input type="text" name="box70" id="bx70" maxlength="1"></td>
-			<td id="box71"><input type="text" name="box71" id="bx71" maxlength="1"></td>
-			<td id="box72"><input type="text" name="box72" id="bx72" maxlength="1"></td>
+			<td id="box61"><input type="text" name="box61" id="bx61" maxlength="1" required readonly placeholder="4"></td>
+			<td id="box62"><input type="text" name="box62" id="bx62" maxlength="1" required></td>
+			<td id="box63"><input type="text" name="box63" id="bx63" maxlength="1" required></td>
 		</tr>
 			</table>
 			</td>
 			<td>
 				<table  id="table_inner">
 		<tr>
-			<td id="box73"><input type="text" name="box73" id="bx73" maxlength="1" ></td>
-			<td id="box74"><input type="text" name="box74" id="bx74" maxlength="1"></td>
-			<td id="box75"><input type="text" name="box75" id="bx75" maxlength="1"></td>				
+			<td id="box64"><input type="text" name="box64" id="bx64" maxlength="1" required ></td>
+			<td id="box65"><input type="text" name="box65" id="bx65" maxlength="1" required readonly placeholder="1"></td>
+			<td id="box66"><input type="text" name="box66" id="bx66" maxlength="1" required></td>				
 		</tr>
 		<tr>
-			<td id="box76"><input type="text" name="box76" id="bx76" maxlength="1"></td>
-			<td id="box77"><input type="text" name="box77" id="bx77" maxlength="1"></td>
-			<td id="box78"><input type="text" name="box78" id="bx78" maxlength="1"></td>
+			<td id="box67"><input type="text" name="box67" id="bx67" maxlength="1" required readonly placeholder="2"></td>
+			<td id="box68"><input type="text" name="box68" id="bx68" maxlength="1" required></td>
+			<td id="box69"><input type="text" name="box69" id="bx69" maxlength="1" required readonly placeholder="6"></td>
 		</tr>
 		<tr>
-			<td id="box79"><input type="text" name="box79" id="bx79" maxlength="1"></td>
-			<td id="box80"><input type="text" name="box80" id="bx80" maxlength="1"></td>
-			<td id="box81"><input type="text" name="box81" id="bx81" maxlength="1"></td>
+			<td id="box70"><input type="text" name="box70" id="bx70" maxlength="1" required></td>
+			<td id="box71"><input type="text" name="box71" id="bx71" maxlength="1" required></td>
+			<td id="box72"><input type="text" name="box72" id="bx72" maxlength="1" required readonly placeholder="3"></td>
+		</tr>
+			</table>
+			</td>
+			<td>
+				<table  id="table_inner">
+		<tr>
+			<td id="box73"><input type="text" name="box73" id="bx73" maxlength="1" required ></td>
+			<td id="box74"><input type="text" name="box74" id="bx74" maxlength="1" required readonly placeholder="9"></td>
+			<td id="box75"><input type="text" name="box75" id="bx75" maxlength="1" required></td>				
+		</tr>
+		<tr>
+			<td id="box76"><input type="text" name="box76" id="bx76" maxlength="1" required></td>
+			<td id="box77"><input type="text" name="box77" id="bx77" maxlength="1" required></td>
+			<td id="box78"><input type="text" name="box78" id="bx78" maxlength="1" required readonly placeholder="7"></td>
+		</tr>
+		<tr>
+			<td id="box79"><input type="text" name="box79" id="bx79" maxlength="1" required></td>
+			<td id="box80"><input type="text" name="box80" id="bx80" maxlength="1" required readonly placeholder="6"></td>
+			<td id="box81"><input type="text" name="box81" id="bx81" maxlength="1" required readonly placeholder="1"></td>
 		</tr>
 			</table>
 			</td>
