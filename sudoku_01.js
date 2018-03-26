@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  function getRandomInt(min, max){
+$(document).ready(function(){  
+  function getRandomInt(min, max){//get the random value
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   var RandomArray = []; 
@@ -14,28 +14,28 @@ $(document).ready(function(){
     [2,8,7,4,1,9,6,3,5],
     [3,4,5,2,8,6,1,7,9] 
   ]
-  var shuffle = function (){
-    var num1 = getRandomInt(1,9);
-    var num2 = getRandomInt(1,9);
-    while (num1 ===num2){
-      num1 = getRandomInt(1,9);
+  var shuffle = function (){//shuffling the values of array and generating a new array
+    var randomNumber1 = getRandomInt(1,9);
+    var randomNumber2 = getRandomInt(1,9);
+    while (randomNumber1 ===randomNumber2){
+      randomNumber1 = getRandomInt(1,9);
     } 
     for (i=0; i <9; i++){
       for (j=0; j<9; j++){
-        if (mainArray[i][j] === num1){
-         mainArray[i][j] = num2;
+        if (mainArray[i][j] === randomNumber1){//change the value of array with random value
+         mainArray[i][j] = randomNumber2;
         } 
-        else if (mainArray[i][j] === num2){
-          mainArray[i][j] = num1;
+        else if (mainArray[i][j] === randomNumber2){//change the value of array with random value
+          mainArray[i][j] = randomNumber1;
         }
       }  
     }
   }
   $("#random_num").on('click', function (){ 
-    shuffle();
-    RandomArray = $.extend(true,[], mainArray);
+    shuffle();//calling shuffle function
+    RandomArray = $.extend(true,[], mainArray);//making  a new random array with shuffled value
     for (i=0; i <9; i++){
-      var getRandomNumHidden = getRandomInt(1,5);
+      var getRandomNumHidden = getRandomInt(1,5);//choosing how many values we have to delete
       var choices = [0,1,2,3,4,5,6,7,8];
       for (j=0; j < getRandomNumHidden; j++){
         var index = getRandomInt(0, choices.length - 1); 
@@ -64,7 +64,7 @@ $(document).ready(function(){
         RandomArray[i][j] = $(checkValue).text();
         var checkValue1 = $("#box" + (i + 1) + (j+ 1));
         if (mainArray[i][j] != RandomArray[i][j]) {
-          $(checkValue1).css({"background-color": "#708238"});
+          $(checkValue1).css({"background-color": "#8A0707"});
         counter++;
         }else {
           $(checkValue1).css({"background-color": ""})
